@@ -1,4 +1,4 @@
-# Full Stack API - VIT Assignment
+# Full Stack API - VIT 
 
 A REST API that processes arrays and categorizes elements into different types (numbers, alphabets, special characters) with specific formatting requirements.
 
