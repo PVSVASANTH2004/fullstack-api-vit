@@ -50,6 +50,14 @@ function createAlternatingCaps(alphabets) {
 // POST endpoint for /bfhl
 app.post('/bfhl', (req, res) => {
     try {
+        // Check if request body exists
+        if (!req.body) {
+            return res.status(400).json({
+                is_success: false,
+                message: "Request body is required"
+            });
+        }
+        
         const { data } = req.body;
         
         // Validate input
